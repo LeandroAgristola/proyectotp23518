@@ -381,7 +381,7 @@ footer .copy {
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     
     /**estilos responsive para el header**/
     header{
@@ -429,7 +429,7 @@ footer .copy {
 
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
     
     /**estilos responsive para el header**/
     header{
