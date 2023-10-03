@@ -1,0 +1,639 @@
+
+
+* {
+    box-sizing: border-box; /**esta propiedad evita que los contenedores crescan mas de lo que se indica**/
+
+}
+html {
+    scroll-behavior: smooth; /**estilo suave al moverte desde los menus**/
+}
+
+body {
+    font-family: 'Lato', sans-serif; /** establecemos la fuente**/ 
+    margin: 0; /** eliminamos el margen del body que viene por defecto**/ 
+    
+}
+
+/**estilos generales**/
+
+h1{ font-size: 3.5em;} /**establecemos los tammaños de los H1**/
+h2{ font-size: 2.7em;} /**establecemos los tammaños de los H2**/
+h3{ font-size: 2em;} /**establecemos los tammaños de los H3**/
+p{ font-size: 1.25em;} /**establecemos los tammaños de los parrafos**/
+ul{list-style: none;} /**eliminamos los marcadores de las listas **/
+
+
+/** estilos de los botones **/
+button {
+    font-size: 1.5em; /**tamaño del texto**/
+    font-weight: bold; /**negrita en el texto**/
+    padding: 10px 30px; /**relleno**/
+    border-radius: 10px; /**bordes redondeados**/
+    border: 1px solid rgba(0,0,0,0.5); /** ancho del borde**/
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5); /**sombra del borde**/
+    color: white; /**color del texto del boton*/
+    background-color: rgb(48, 48, 119); /**color del fondo del boton**/
+    transition-property: all; /**transicion de salida*/
+	transition-duration: 0.5s; /**transicion de salida*/
+}
+
+button:hover{
+    background-color: rgb(89, 89, 247); /**cambio de color del boton**/
+    transition-property: all; /**transicion de entrada**/
+	transition-duration: 1s; /**transicion de entrada**/
+}
+
+.color-acento { color:rgb(89, 89, 247);} /**Estilo de los textos diferentes**/
+
+/**Estilo para todo lo que este dentro de la clase "Contenedor**/
+.contenedor{
+    max-width: 1400px; /**centra el texto a medida que la pagina se agranda **/
+    margin: auto;
+}
+
+
+/**Estilo para todo lo que este dentro del header**/
+
+header{
+    background-color: rgb(245, 245, 245); /**color del fondo del header**/
+}
+
+header .logo{ /**estilo para el logo**/
+    margin: 0; /**reseteamos el margen del logo**/
+    padding: 25px 30px; /**aplica arriba y a los costados**/
+    font-weight: bold; /**negrita en el texto del logo**/
+    color: rgb(48, 48, 119); /***color del logo**/
+    font-size: 2em; /**tamaña del texto del logo**/
+    display: flex; 
+    flex-direction: column; /**aliena los items en columna**/
+    align-items: center; /**Centra los items**/
+
+}
+
+header .logo p {
+    margin: 0px;
+}
+
+header .contenedor{ /**estilo para todo el contenedor**/
+    display: flex; 
+    flex-direction: column; /**aliena los items en columna**/
+    align-items: center; /**Centra los items**/
+
+}
+
+header nav{ /**estilo para el menu principal**/
+    display: flex; /**posicionamiento del menu**/
+    flex-direction: column; /**ordena los items en columnas**/
+    text-align: center; /** alinea el texto del menu**/
+    padding-bottom: 25px; /**relleno del boton**/
+    width: 100%;
+}
+
+header a { /**estilo para el texto del menu**/
+    padding: 15px 10px; /**rellen de los botones del menu**/
+    text-decoration: none; /**elimina la linea de los link**/
+    font-weight: bold; /**establece el texto en negrita**/
+    color: black; /**color del texto del menu**/
+    transition-property: all; /**transicion de entrada**/
+	transition-duration: 0.5s; /**transicion de entrada**/
+}
+
+header a:hover {
+    color:rgb(89, 89, 247); /**color del texto del menu al interactuar**/
+    padding: 18px; /**colocamos el mismo paddin que en "a" para q no se mueva el elemento**/
+    background-color: rgba(0,0,0,0.08); /**color del dondo de los menu al interactuar**/
+    transition-property: all; /**transicion de salida*/
+	transition-duration: 0.5s; /**transicion de salida*/
+}
+header .logo img { /**aplicamos estilo a la imagen del logo**/
+    height: 80px;
+    width: 120px;
+
+}
+/** estilo para el banner principal**/
+
+#hero  {
+    display: flex;
+    align-items: center; /**Centra los items**/
+    justify-content: center; /**centra el contenido del contenedor**/
+    text-align: center; /**alinea el texto**/
+    flex-direction: column; /**aliena los items en columna**/
+    height: 100vh; /**tamaño relativo del contenedor**/
+
+    /**tecnica para agregar un filtro negro atras de un fondo**/
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+        ,url("imagenes/hero.jpg");
+
+    background-repeat:no-repeat; /**la imagen no se repite**/
+    background-size:cover; /**la imagen cubre todo el contenedor**/
+    background-position: center center; /**la imagen se posiciona en el centro**/
+
+}
+
+#hero h1{
+    color:white; /**color del texto dentro del banner**/
+}
+
+
+#nosotros .contenedor{
+    text-align: center; /**alinea el texto del contenedor**/
+    padding: 200px 12px; /**agrega relleno al contenedor**/
+    height: 100vh; /**tamaño relativo del contenedor**/
+}
+
+/**Estilo para la seccion del sub menu**/
+
+#serie{ 
+    background-color: rgb(30,30,30);
+    color:white;
+    text-align: center;
+
+}
+
+#serie .contenedor{
+    padding: 100px 0px;
+    height: 100vh; /**tamaño relativo del contenedor**/
+}
+
+#serie h2 {
+    margin-top: 0;
+
+}
+
+#serie p{
+    display: none;
+
+}
+
+#serie .submenu { /**aplicamos estilo a las imagenes de todos los sub menu**/
+    background-position: center center; 
+    background-size: cover;
+    padding: 30px ;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.submenu:first-child{ /**estilo apra el 1er menu**/
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+        ,url("imagenes/vivienda.jpg");
+
+}
+.submenu:nth-child(2){ /**estilo apra el 2er menu**/
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+        ,url("imagenes/edificio.jpg");
+
+}
+.submenu:nth-child(3){ /**estilo apra el 3er menu**/
+
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+        ,url("imagenes/industria.jpg");
+
+}
+
+/**Estilo para la seccion de contacto**/
+
+#contacto .contenedor {
+    
+    flex-direction: column; /**aliena los items en columna**/
+    align-items: center; /**Centra los items**/
+    text-align: center;
+    padding: 50px 12px;
+    height: 100vh; 
+
+}
+
+#contacto .contenedor input{
+    border-radius: 10px;
+    background-color: rgba(48, 48, 119,0.2);
+    border-color:rgb(48, 48, 119);
+    border: none;
+    margin: 20px;
+    width: 400px;
+    height: 40px;
+    font-size: 0.8em;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5); /**sombra del borde**/
+}
+
+#contacto .contenedor input:hover{
+    border-radius: 10px;
+    background-color: rgba(48, 48, 119,0.1);;
+    border-color:rgb(89, 89, 247);
+    margin: 20px;
+    width: 400px;
+    height: 40px;
+    font-size: 0.8em;
+}
+
+
+#contacto .contenedor label{
+    font-weight: bold
+}
+
+#contacto .botones input {
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.2em;
+    width: 200px;
+    border: 1px solid rgba(0,0,0,0.5); /** ancho del borde**/
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5); /**sombra del borde**/
+    color: white; /**color del texto del boton*/
+    background-color: rgb(48, 48, 119); /**color del fondo del boton**/
+    transition-property: all; /**transicion de salida*/
+	transition-duration: 0.5s; /**transicion de salida*/
+}
+
+#contacto .botones input:hover {
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.1em;
+    width: 200px;
+    background-color: rgb(89, 89, 247); /**cambio de color del boton**/
+    transition-property: all; /**transicion de entrada**/
+	transition-duration: 1s; /**transicion de entrada**/
+}
+
+/**estilo para el contenido final**/
+
+#ubicacion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#ubicacion h2{
+     font-size: 8vw;
+}
+
+#ubicacion iframe{
+    height: 450px;
+    width: 450px;
+
+}
+
+/**estilos para el footer**/
+
+footer {
+    background-color: rgb(245, 245, 245);
+}
+
+
+footer .contenedor .cajadatos{
+    padding-top: 50px;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column; /**aliena los items en columna**/
+    align-items: center; /**Centra los items**/
+    background-color: rgb(245, 245, 245);
+}
+
+footer .contenedor .cajadatos .datos {
+    padding-top: 10px;
+}
+
+footer a, i {
+    text-decoration: none;
+    color: black;
+    font-size: 1.25em;
+    padding-left: 10px;
+}
+
+footer .copy {
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    font-size: 0.8em;
+}
+
+/**estilos para las paginas de la seccion Serie mobile**/
+
+.heromobile .tarjeta {
+    background-position: center center; 
+    background-size: cover;
+    padding: 30px ;
+    margin: 20px;
+    border-radius: 15px;
+    background-color: rgba(0,0,0,0.7);
+
+}
+
+.heromobile  {
+    display: flex;
+    align-items: center; /**Centra los items**/
+    justify-content: center; /**centra el contenido del contenedor**/
+    text-align: center; /**alinea el texto**/
+    flex-direction: column; /**aliena los items en columna**/
+    height: 60vh; /**tamaño relativo del contenedor**/
+    padding: 15px;
+    background-repeat:no-repeat; /**la imagen no se repite**/
+    background-size:cover; /**la imagen cubre todo el contenedor**/
+    background-position: center center; /**la imagen se posiciona en el centro**/
+    background-image: linear-gradient( 0deg,rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+}
+
+.heromobile, h1{
+    color:white; 
+}
+
+/**Fondos para las distintas paginas**/
+
+#edificios {
+    background-image: url("imagenes/edificio.jpg");
+
+}
+
+#viviendas {
+    background-image: url("imagenes/vivienda.jpg");
+
+}
+
+#industrias {
+    background-image: url("imagenes/industria.jpg");
+
+}
+
+
+@media (min-width: 768px) {
+    
+    /**estilos responsive para el header**/
+    header{
+        position: fixed; /**header se ancla al margen superior por mas que scrolleon**/
+        width: 100%; /** siempre que se usa "position:fixed" hay q establecer el ancho en 100%**/ 
+    }
+
+    header .contenedor .logo{
+        flex-direction: row;
+
+    }
+
+    header .contenedor{
+        flex-direction: row; /** posiciona los elementos horizonatalemte**/
+        justify-content: space-between; /**posiciona un contenido a la derecha y otro a la izquierda**/
+
+    }
+
+
+    header nav{
+        flex-direction: row; /** posiciona los elementos horizonatalemte**/
+        padding-bottom: 0; /**elimina el relleno inferior**/
+        padding-right: 0px;
+        justify-content: right;
+
+    }
+
+    header a { /**estilo para el texto del menu**/
+        font-size: 1.15em;
+        padding: 15px 5px; /**rellen de los botones del menu**/
+        text-decoration: none; /**elimina la linea de los link**/
+        font-weight: bold; /**establece el texto en negrita**/
+        color: black; /**color del texto del menu**/
+        transition-property: all; /**transicion de entrada**/
+        transition-duration: 0.5s; /**transicion de entrada**/
+    }
+    
+    header a:hover {
+        color:rgb(89, 89, 247); /**color del texto del menu al interactuar**/
+        padding: 5px; /**colocamos el mismo paddin que en "a" para q no se mueva el elemento**/
+        background-color: rgb(245, 245, 245);
+        transition-property: all; /**transicion de salida*/
+        transition-duration: 0.5s; /**transicion de salida*/
+    }
+
+}
+
+@media (min-width: 1024px) {
+    
+    /**estilos responsive para el header**/
+    header{
+        position: fixed; /**header se ancla al margen superior por mas que scrolleon**/
+        width: 100%; /** siempre que se usa "position:fixed" hay q establecer el ancho en 100%**/ 
+    }
+
+    header .contenedor .logo{
+        flex-direction: row;
+
+    }
+
+    header .contenedor{
+        flex-direction: row; /** posiciona los elementos horizonatalemte**/
+        justify-content: space-between; /**posiciona un contenido a la derecha y otro a la izquierda**/
+
+    }
+
+
+    header nav{
+        flex-direction: row; /** posiciona los elementos horizonatalemte**/
+        padding-bottom: 0; /**elimina el relleno inferior**/
+        padding-right: 30px;
+        justify-content: right;
+
+    }
+
+    header a { /**estilo para el texto del menu**/
+        font-size: 1.25em;
+        padding: 15px 10px; /**rellen de los botones del menu**/
+        text-decoration: none; /**elimina la linea de los link**/
+        font-weight: bold; /**establece el texto en negrita**/
+        color: black; /**color del texto del menu**/
+        transition-property: all; /**transicion de entrada**/
+        transition-duration: 0.5s; /**transicion de entrada**/
+    }
+    
+    header a:hover {
+        color:rgb(89, 89, 247); /**color del texto del menu al interactuar**/
+        padding: 15px; /**colocamos el mismo paddin que en "a" para q no se mueva el elemento**/
+        background-color: rgb(245, 245, 245);
+        transition-property: all; /**transicion de salida*/
+        transition-duration: 0.5s; /**transicion de salida*/
+    }
+
+    #hero h1{
+        font-size: 4em;
+    }
+    
+/**estilos responsive para el nosotros**/
+    
+    #nosotros .contenedor{
+        display: flex; 
+        justify-content: space-evenly;/**agrega un relleno parejo al contenedor**/
+    }
+
+    #nosotros .textonosotros{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding: 0px 30px;
+        padding-left: 50px;
+        display: flex; /**le damos estilo al contenedor del texto**/
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #nosotros h2 {
+        margin-top: 0px; /**sacamos el margen del titulo para centrarlo**/
+
+    }
+
+    #nosotros .imgnosotros{
+        
+        background-image: url("imagenes/s1.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+
+    }
+
+/**Estilo para la seccion del sub menu**/
+
+    #serie .datos_empresa{ /** utilizamos la clase que contiene todos los sub menu**/
+        display: flex; /**colocamos los sub menu en linea horizontal**/
+        justify-content: center; /**centramos el contenido**/
+
+    }
+
+    #serie p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #serie h2{
+        font-size: 4em;
+    }
+
+    #serie h3{
+        margin-top: 40px; /**agregamos relleno a los titulos**/
+
+    }
+
+    #serie .submenu{
+        padding: 50px;
+        width: 400px;
+        height: 600px;
+        background-size: 100% 150px; /**las imaganes nuevas cubren todo el ancho pero no todo el largo**/
+        background-repeat: no-repeat; /**las imagenes nuevas no se repiten dentro del menu**/
+        background-position-y: 0; /**posiciona la imagenes nuevas arriba de los menu**/
+        background-color: rgba(50,50,50,0.5); /**cambiamos el color de fondo de los submenu**/
+        box-shadow: 2px 2px 10px rgba(50,50,50,0.5) /**agregamos sombras a las cartas**/
+        
+
+    }
+
+    #serie .submenu a{
+        display: none;
+    }
+
+/**cambiamos las imagenes de los sub menu**/
+    
+    .submenu:first-child{ /**estilo apra el 1er menu**/
+
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+            ,url("imagenes/vivienda.jpg");
+    
+    }
+    .submenu:nth-child(2){ /**estilo apra el 2er menu**/
+    
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+            ,url("imagenes/edificio.jpg");
+    
+    }
+    .submenu:nth-child(3){ /**estilo apra el 3er menu**/
+    
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+            ,url("imagenes/industria.jpg");
+    
+    }
+
+
+/**Estilo para la seccion de contacto**/
+
+
+    #contacto .contenedorform{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+
+    #contacto .formulario{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #contacto .imgcontacto{
+        background-image: url("imagenes/contacto.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+
+    }
+
+/**Estilo para la seccion de Ubicacion**/
+
+    #ubicacion h2{
+        font-size: 2.7em;
+    }
+
+    #ubicacion iframe {
+        height: 450px;
+        width: 1000px;
+
+    }
+
+/**Estilo para la seccion de footer**/
+
+     footer .contenedor .cajadatos {
+        flex-direction: row;
+        height: 100px;
+        width: 100%;
+        justify-content: center;
+        justify-content: space-between;
+
+     }
+    
+
+}
+
