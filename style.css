@@ -143,7 +143,7 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
 
 #nosotros .contenedor{
     text-align: center; /**alinea el texto del contenedor**/
-    padding: 200px 12px; /**agrega relleno al contenedor**/
+    padding: 100px 10px; /**agrega relleno al contenedor**/
     height: 100vh; /**tamaño relativo del contenedor**/
 }
 
@@ -488,6 +488,7 @@ footer .copy {
     #nosotros .contenedor{
         display: flex; 
         justify-content: space-evenly;/**agrega un relleno parejo al contenedor**/
+        align-items: center;
     }
 
     #nosotros .textonosotros{
@@ -530,6 +531,7 @@ footer .copy {
     }
 
     #serie h2{
+        padding-top:50px ;
         font-size: 4em;
     }
 
@@ -541,7 +543,7 @@ footer .copy {
     #serie .submenu{
         padding: 50px;
         width: 400px;
-        height: 600px;
+        height: 550px;
         background-size: 100% 150px; /**las imaganes nuevas cubren todo el ancho pero no todo el largo**/
         background-repeat: no-repeat; /**las imagenes nuevas no se repiten dentro del menu**/
         background-position-y: 0; /**posiciona la imagenes nuevas arriba de los menu**/
@@ -591,6 +593,11 @@ footer .copy {
 
 /**Estilo para la seccion de contacto**/
 
+    #contacto {
+        padding-top: 50px;
+        height: 100vh;
+
+    }
 
     #contacto .contenedorform{
         display: flex;
