@@ -90,6 +90,7 @@ header nav{ /**estilo para el menu principal**/
 }
 
 header a { /**estilo para el texto del menu**/
+    font-size: 1.5em;
     padding: 15px 10px; /**rellen de los botones del menu**/
     text-decoration: none; /**elimina la linea de los link**/
     font-weight: bold; /**establece el texto en negrita**/
@@ -99,6 +100,7 @@ header a { /**estilo para el texto del menu**/
 }
 
 header a:hover {
+    font-size: 1.5em;
     color:rgb(89, 89, 247); /**color del texto del menu al interactuar**/
     padding: 18px; /**colocamos el mismo paddin que en "a" para q no se mueva el elemento**/
     background-color: rgba(0,0,0,0.08); /**color del dondo de los menu al interactuar**/
@@ -404,14 +406,14 @@ footer .copy {
     header nav{
         flex-direction: row; /** posiciona los elementos horizonatalemte**/
         padding-bottom: 0; /**elimina el relleno inferior**/
-        padding-right: 0px;
+        padding-right: 25px;
         justify-content: right;
 
     }
 
     header a { /**estilo para el texto del menu**/
         font-size: 1.15em;
-        padding: 15px 5px; /**rellen de los botones del menu**/
+        padding: 15px 15px; /**rellen de los botones del menu**/
         text-decoration: none; /**elimina la linea de los link**/
         font-weight: bold; /**establece el texto en negrita**/
         color: black; /**color del texto del menu**/
@@ -420,8 +422,9 @@ footer .copy {
     }
     
     header a:hover {
+        font-size: 1.15em;
         color:rgb(89, 89, 247); /**color del texto del menu al interactuar**/
-        padding: 5px; /**colocamos el mismo paddin que en "a" para q no se mueva el elemento**/
+        padding: 10px 15px; /**rellen de los botones del menu**/
         background-color: rgb(245, 245, 245);
         transition-property: all; /**transicion de salida*/
         transition-duration: 0.5s; /**transicion de salida*/
@@ -458,7 +461,7 @@ footer .copy {
     }
 
     header a { /**estilo para el texto del menu**/
-        font-size: 1.25em;
+        font-size: 1.5em;
         padding: 15px 10px; /**rellen de los botones del menu**/
         text-decoration: none; /**elimina la linea de los link**/
         font-weight: bold; /**establece el texto en negrita**/
@@ -468,6 +471,7 @@ footer .copy {
     }
     
     header a:hover {
+        font-size: 1.5em;
         color:rgb(89, 89, 247); /**color del texto del menu al interactuar**/
         padding: 15px; /**colocamos el mismo paddin que en "a" para q no se mueva el elemento**/
         background-color: rgb(245, 245, 245);
