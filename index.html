@@ -2,9 +2,8 @@
 <html lang="es-ES"> <!--...-->
 		<head> <!--Metadatos OBLIGATORIA-->
 		<meta charset="utf-8"> 
-		<meta name="viewport" content="width=device-width;initial-scale=1.0">
-		<meta name="description" content="decripcion de no mas de 150 caracteres">  <!--Agragar Descripcion-->
-		<script src="javascript.js"></script> <!-- para importar archivo javascript-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Somos expertos en desarrollo inmobiliario, con mas de 20 años de experiencia en el mercado">  <!--Agragar Descripcion-->
 		<link rel="preconnect" href="https://fonts.googleapis.com"><!-- estilo fuente-->
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- estilo fuente-->
 		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> <!-- estilo fuente-->
@@ -19,13 +18,13 @@
 
 		<header id="home"><!--cabecera-->
 			<div class="contenedor">
-				<div class="logo">
-					<img src="logo/logo.png" alt="logo">
-					<p>Realestate</p>
+				<div class="logo"> <!--Contenedor del logo-->
+					<img src="logo/logo.png" alt="logo"> <!-- imagen del logo -->
+					<p>Realestate</p> <!-- Texto logo-->
 				</div>
 				<!--<input type="checkbox" id="toggle">
             	<label for="toggle"><i class="fa-solid fa-bars"></i></label>-->
-				<nav>
+				<nav> <!-- Barra de menu-->
 					<a href="#hero">Home</a>
 					<a href="#nosotros">Nosotros</a>
 					<a href="#serie">Serie</a>
@@ -36,18 +35,18 @@
 		</header>
 
 		<section id="hero"> <!--banner principal-->
-			<h1>Nuestros Desarrollos</h1> 
-			<form action="brochure.pdf" target="_blank">
-				<button>Brochure Paper</button> <!--Boton del centro de la pagina--><
+			<h1>Nuestros Desarrollos</h1>  <!-- Texto central del banner principal-->
+			<form action="brochure.pdf" target="_blank"> <!-- descarga del folleto PDF -->
+				<button>Brochure Paper</button> <!--Boton del centro de la pagina-->
 			</form>
 		</section>
 
-		<section id="nosotros"> <!--Contenido debajo de banner principal-->
+		<section id="nosotros"> <!--Seccion Nosotros-->
 			<div class="contenedor">
-				<div class="imgnosotros"></div><!--Imagen de la seccion nosotros-->
-				<div class="textonosotros">
-					<h2>Sobre <br> <span class="color-acento">Realestate</span></h2>
-					<P>
+				<div class="imgnosotros"></div><!--Imagen de la seccion nosotros, la agregamos en CSS-->
+				<div class="textonosotros"> <!-- Contenedor de texto de la Seccion Nosotros -->
+					<h2>Sobre <br> <span class="color-acento">Realestate</span></h2> <!-- Titulo de la seccion Nosotros -->
+					<P> <!-- Texto de la seccion Nosotros-->
 						A través de la creación, inversión y gerenciamiento de las mismas, buscamos aportar valor agregado y seguir transformando las industrias a las que pertenecemos, 
 						mejorando la experiencia de los clientes, dándoles un servicio diferencial y generando retornos a nuestros  inversores. <br><br>
 						Fomentamos una cultura de ética, sin egos, sinérgica y profesional; de puertas abiertas, creativa y de 
@@ -58,10 +57,10 @@
 
 		<section id="serie"><!--seccion de tarjetas-->
 			<div class="contenedor">
-				<h2>Serie <span class="color-acento">Realestate</span></h2>
+				<h2>Serie <span class="color-acento">Realestate</span></h2> <!--Titulo de la seccion de tarjetas -->
 					<div class="datos_empresa"> <!--Este div permite darle estilo al sub menu-->
 						<div class="submenu"><!--tarjeta 1-->
-							<h3>Viviendas</h3>
+							<h3>Viviendas</h3> <!-- Tarjeta viviendas-->
 							<p>Un producto único, que busca generar una experiencia diferente en un entorno de disfrute, contención y tranquilidad, 
 								inmerso en la naturaleza. <br>
 								Con unidades que se entregan totalmente decoradas y equipadas, con los más completos amenities y servicios, 
@@ -69,7 +68,7 @@
 							</p>
 								<a href="viviendasmobile.html"><button>+ info</button></a>
 						</div>
-						<div class="submenu"><!--tarjeta 2-->
+						<div class="submenu"><!--tarjeta Edificios-->
 							<h3>Edificios</h3>
 							<p>Desarrollamos Edificio residencial Premium exclusivos. Ofrecemos la posibilidad de acceder a unidades en lista cero (al costo): 
 								a precio cerrado, sin ajustes CAC, sin comisiones inmobiliarias. Obra de bajo riesgo constructivo y financiero, con tiempos de obra cortos por 
@@ -78,7 +77,7 @@
 								<a href="edificiosmobile.html"><button>+ info</button></a>
 						</div>
 						<div class="submenu">
-							<h3>Industria</h3><!--tarjeta 3-->
+							<h3>Industria</h3><!--tarjeta industrias-->
 							<p>Somos especialistas en inmuebles industriales y contamos con un equipo de profesionales en el desarrollo y planificación de locaciones industriales
 								Aplicamos tecnologías de última generación, para cumplir con lo más alto estándares en seguridad y cuidado del medio ambiente. 
 			
@@ -89,14 +88,14 @@
 			</div>
 		</section>
 
-		<section id="contacto"><!---->
-			<div class="contenedor"><!---->
-				<div>
+		<section id="contacto"><!--Seccion de formulario de contacto-->
+			<div class="contenedor"><!-- Contenedor general Titulo/formulario-imagen-->
+				<div> <!-- Contenedor de titulo-->
 					<h2>Contacto</h2>
 		
 				</div>
-				<div class="contenedorform">
-					<div class="formulario">
+				<div class="contenedorform"> <!-- Contenedor Formualario e imagen -->
+					<div class="formulario"> <!--Contenedor Formulario -->
 						<form name="contacto" autocomplete="on" method="post">
 							
 							<p>
@@ -131,38 +130,39 @@
 						</form>
 					</div>
 				
-					<div class="imgcontacto">
-					</div><!--Imagen telefonista-->
+					<div class="imgcontacto"></div><!--Imagen telefonista-->
 				</div>
 			</div>
 		</section>
 
-		<section id="ubicacion">
-			<h2>Ubicacion</h2>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d817.8500541816977!2d-57.953874576704685!3d-34.921498429018776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62e3fc93575%3A0x6ffaec3bf616e000!2sPlaza%20Moreno!5e0!3m2!1ses-419!2sar!4v1695515733925!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-		</section>
+		<section id="ubicacion"> <!-- Seccion de Iframe Google Maps-->
+			<h2>Ubicacion</h2> <!-- TiTulo-->
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d817.8500541816977!2d-57.
+			953874576704685!3d-34.921498429018776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62e3fc93575%3A0x6ffaec3bf616e000!2sPlaza%20Moren
+			o!5e0!3m2!1ses-419!2sar!4v1695515733925!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</section> <!-- Mapa -->
 		
-		<footer>
+		<footer> <!-- Parte de contactos-->
 			<div class="contenedor"><!--Contendor del copyright-->
 				<div class="cajadatos">
-					<div class="datos">
+					<div class="datos"> <!--Instagram -->
 						<i class="fa-brands fa-square-instagram"></i> <a href="https://www.instagram.com/realestate/?hl=es" target="_blank">@reakestate</a>
 
 					</div>
-					<div class="datos">
+					<div class="datos"> <!--Whatsapp -->
 						<i class="fa-solid fa-phone"></i><a href="https://api.whatsapp.com/send?phone=541143214321" target="_blank">1143214321</a>
 						
 					</div>
-					<div class="datos">
+					<div class="datos"> <!-- Mail -->
 						<i class="fa-solid fa-envelope"></i> <a href="mailto:consultas@realestate.com" target="_blank">consultas@realestate.com</a>
 						
 					</div>
-					<div class="datos">
+					<div class="datos"> <!-- Localizacion -->
 						<i class="fa-solid fa-location-dot"></i> <a href="https://maps.app.goo.gl/7smjejBQubtxXAZKA" target="_blank">Calle 14 N°12, La Plata, Buenos aires </a>
 						
 					</div>
 				</div>
-				<div class="copy">
+				<div class="copy"> <!-- Seccion Copy -->
 					<p>&copy;Mi empresa 2023</p> <!--Etiqueta para agregar un copyright-->
 
 				</div>

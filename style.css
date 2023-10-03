@@ -120,7 +120,7 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
     justify-content: center; /**centra el contenido del contenedor**/
     text-align: center; /**alinea el texto**/
     flex-direction: column; /**aliena los items en columna**/
-    height: 100vh; /**tamaño relativo del contenedor**/
+    height: 1000px; /**tamaño relativo del contenedor**/
 
     /**tecnica para agregar un filtro negro atras de un fondo**/
     background-image: linear-gradient(
@@ -144,7 +144,7 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
 #nosotros .contenedor{
     text-align: center; /**alinea el texto del contenedor**/
     padding: 100px 10px; /**agrega relleno al contenedor**/
-    height: 100vh; /**tamaño relativo del contenedor**/
+    height: 1000px; /**tamaño relativo del contenedor**/
 }
 
 /**Estilo para la seccion del sub menu**/
@@ -158,7 +158,7 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
 
 #serie .contenedor{
     padding: 100px 0px;
-    height: 100vh; /**tamaño relativo del contenedor**/
+    height: 1000px; /**tamaño relativo del contenedor**/
 }
 
 #serie h2 {
@@ -218,7 +218,7 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
     align-items: center; /**Centra los items**/
     text-align: center;
     padding: 50px 12px;
-    height: 100vh; 
+    height: 1000px; 
 
 }
 
@@ -283,7 +283,7 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
     text-align: center;
     background-color: rgb(30,30,30);
     color: white;
-    height: 80vh;
+    height: 700px;
 }
 
 #ubicacion h2{
@@ -300,12 +300,12 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
 
 footer {
     background-color: rgb(245, 245, 245);
+    height: 340;
 }
 
 
 footer .contenedor .cajadatos{
-    padding-top: 50px;
-    height: 150px;
+    padding-top: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -428,7 +428,99 @@ footer .copy {
         background-color: rgb(245, 245, 245);
         transition-property: all; /**transicion de salida*/
         transition-duration: 0.5s; /**transicion de salida*/
+        
     }
+    
+    /**estilos responsive para el nosotros**/
+
+    #nosotros .contenedor{
+        display: flex; 
+        align-items: center;
+        padding: 50px;
+    }
+
+    #nosotros .textonosotros{
+        flex-direction: column;
+    }
+
+    /**Estilo para la seccion del sub menu**/
+
+ 
+    #serie .contenedor{
+        padding-top: 50px 0px;
+        padding-bottom: 0px;
+        height: 1000px; /**tamaño relativo del contenedor**/
+    }
+    
+    #serie h2 {
+        margin-top: 50px;
+    
+    }
+    
+    #serie p{
+        display: none;
+    
+    }
+    
+    #serie .submenu { /**aplicamos estilo a las imagenes de todos los sub menu**/
+        background-position: center center; 
+        background-size: cover;
+        padding: 20px ;
+        margin: 20px;
+        border-radius: 15px;
+    }
+    /**Estilo para la seccion de contacto**/
+
+    #contacto {
+        padding-top: 50px;
+
+    }
+
+    #contacto .contenedorform{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+
+    #contacto .formulario{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #contacto .imgcontacto{
+        background-image: url("imagenes/contacto.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 500px;
+
+    }
+
+    /**Estilo para la seccion de Ubicacion**/
+
+    #ubicacion h2{
+        font-size: 2.7em;
+    }
+
+    #ubicacion iframe {
+        height: 450px;
+        width: 900px;
+
+    }
+
+/**Estilo para la seccion de footer**/
+
+     footer .contenedor .cajadatos {
+        flex-direction: row;
+        height: 100px;
+        width: 100%;
+        justify-content: center;
+        justify-content: space-between;
+
+     }
 
 }
 
@@ -595,7 +687,6 @@ footer .copy {
 
     #contacto {
         padding-top: 50px;
-        height: 100vh;
 
     }
 
