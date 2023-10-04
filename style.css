@@ -286,12 +286,8 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
     height: 580px;
 }
 
-#ubicacion h2{
-     font-size: 8vw;
-}
-
 #ubicacion iframe{
-    height: 450px;
+    height: 350px;
     width: 350px;
 
 }
