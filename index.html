@@ -96,37 +96,36 @@
 				</div>
 				<div class="contenedorform"> <!-- Contenedor Formualario e imagen -->
 					<div class="formulario"> <!--Contenedor Formulario -->
-						<form name="contacto" autocomplete="on" method="post">
+						<form name="contacto" autocomplete="on" method="post" onsubmit="return validarFormulario();">
 							
 							<p>
-							<label for="name">Nombre</label>
+							<label for="nombre">Nombre</label>
 							<br>
-							<input type="text" name="name" id="name" placeholder="Juan" pattern="[a-zA-Z ]{2,254}" required>
+							<input type="text" name="nombre" id="nombre" placeholder="Juan"  >
 							</p>
 							
 							<p>
-							<label for="name"> Apellido</label>
+							<label for="apellido"> Apellido</label>
 							<br>
-							<input type="text" name="name" id="name" placeholder="Perez" pattern="[a-zA-Z]{2,254}" required >
+							<input type="text" name="apellido" id="apellido" placeholder="Perez"  >
 							</p>
 							
 							<p>
-							<label for="phone"> Telefono </label>
+							<label for="telefono"> Telefono </label>
 							<br>
-							<input type="tel" name="phone" id="phone" placeholder="0115345456" pattern="[0-9]{10,254}" required>
+							<input type="tel" name="telefono" id="telefono" placeholder="0115345456" >
 							</p>
 
 							<p>
 							<label for="email"> Email </label>
 							<br>
-							<input type="email" name="email" id="email" placeholder="ejemplo@email.com" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+							<input type="email" name="email" id="email" placeholder="ejemplo@email.com" >
 							</p>
 							
 							<div class="botones">
 								<input type="submit" value="Enviar">	
 								<input type="reset" value="Cancelar">
 							</div>
-
 						</form>
 					</div>
 				
@@ -137,9 +136,7 @@
 
 		<section id="ubicacion"> <!-- Seccion de Iframe Google Maps-->
 			<h2>Ubicacion</h2> <!-- TiTulo-->
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d817.8500541816977!2d-57.
-			953874576704685!3d-34.921498429018776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62e3fc93575%3A0x6ffaec3bf616e000!2sPlaza%20Moren
-			o!5e0!3m2!1ses-419!2sar!4v1695515733925!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d817.8500541816977!2d-57.953874576704685!3d-34.921498429018776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a2e62e3fc93575%3A0x6ffaec3bf616e000!2sPlaza%20Moreno!5e0!3m2!1ses-419!2sar!4v1695515733925!5m2!1ses-419!2sar"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</section> <!-- Mapa -->
 		
 		<footer> <!-- Parte de contactos-->
@@ -168,6 +165,7 @@
 				</div>
 			</div>
 		</footer>
+		<script src="validacion.js"></script>
 	</body>
 </html>
 

@@ -23,7 +23,7 @@ p{ font-size: 1.25em;} /**establecemos los tammaños de los parrafos**/
 ul{list-style: none;} /**eliminamos los marcadores de las listas **/
 
 
-/** estilos de los botones **/
+/** ESTILO PARA LOS BOTONES **/
 button {
     font-size: 1.5em; /**tamaño del texto**/
     font-weight: bold; /**negrita en el texto**/
@@ -45,18 +45,19 @@ button:hover{
 
 .color-acento { color:rgb(89, 89, 247);} /**Estilo de los textos diferentes**/
 
-/**Estilo para todo lo que este dentro de la clase "Contenedor**/
+/**ESTILOS PARA LA CLASE CONTENEDOR**/
 .contenedor{
     max-width: 1400px; /**centra el texto a medida que la pagina se agranda **/
     margin: auto;
 }
 
 
-/**Estilo para todo lo que este dentro del header**/
+/**ESTILOS PARA EL HEADER**/
 
 header{
     background-color: rgb(245, 245, 245); /**color del fondo del header**/
 }
+
 
 header .logo{ /**estilo para el logo**/
     margin: 0; /**reseteamos el margen del logo**/
@@ -71,10 +72,10 @@ header .logo{ /**estilo para el logo**/
 }
 
 header .logo p {
-    margin: 0px;
+    margin: 0px; /** eliminamos el margen por defecto del parrafo**/
 }
 
-header .contenedor{ /**estilo para todo el contenedor**/
+header .contenedor{ /**estilo para todo el contenedor header donde esta el logo con la imagen y el texto ; y el nav**/
     display: flex; 
     flex-direction: column; /**aliena los items en columna**/
     align-items: center; /**Centra los items**/
@@ -90,7 +91,7 @@ header nav{ /**estilo para el menu principal**/
 }
 
 header a { /**estilo para el texto del menu**/
-    font-size: 1.5em;
+    font-size: 1.5em; /**tamaño del texto de la barra de navegacion**/
     padding: 15px 10px; /**rellen de los botones del menu**/
     text-decoration: none; /**elimina la linea de los link**/
     font-weight: bold; /**establece el texto en negrita**/
@@ -112,7 +113,7 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
     width: 120px;
 
 }
-/** estilo para el banner principal**/
+/** ESTILO PARA EL BANNER PRINCIPAL**/
 
 #hero  {
     display: flex;
@@ -141,13 +142,15 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
 }
 
 
+/**ESTILO PARA LA SECCION "NOSOTROS"**/
+
 #nosotros .contenedor{
     text-align: center; /**alinea el texto del contenedor**/
     padding: 100px 10px; /**agrega relleno al contenedor**/
     height: 900px; /**tamaño relativo del contenedor**/
 }
 
-/**Estilo para la seccion del sub menu**/
+/**ESTILO PARA LA SECCION DE SERIE*/
 
 #serie{ 
     background-color: rgb(30,30,30);
@@ -157,26 +160,26 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
 }
 
 #serie .contenedor{
-    padding: 30px 0px;
+    padding: 30px 0px; /**agregamos relleno al contenedor de las tarjetas**/
     height: 1000px; /**tamaño relativo del contenedor**/
 }
 
 #serie h2 {
-    margin-top: 0;
+    margin-top: 0; /**eliminamos el margen superior del texto del titulo de la seccion**/
 
 }
 
 #serie p{
-    display: none;
+    display: none; /**ocultamos el texto para la version mobile, ya que el mismo se muestra en un pagina individual**/
 
 }
 
 #serie .submenu { /**aplicamos estilo a las imagenes de todos los sub menu**/
-    background-position: center center; 
-    background-size: cover;
-    padding: 20px ;
-    margin: 20px;
-    border-radius: 15px;
+    background-position: center center; /**centramos el fondo**/
+    background-size: cover; /**el fondo cubre todo la tarjeta**/
+    padding: 20px ; /**agregamos relleno a la tarjeta**/
+    margin: 20px; /**agregamos margen a las tarjetas**/
+    border-radius: 15px; /**redondeamos el borde de las tarjetas**/
 }
 
 .submenu:first-child{ /**estilo apra el 1er menu**/
@@ -210,29 +213,28 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
 
 }
 
-/**Estilo para la seccion de contacto**/
+/**ESTILO PARA LA SECCION DE CONTACTO**/
 
 #contacto .contenedor {
     
     flex-direction: column; /**aliena los items en columna**/
     align-items: center; /**Centra los items**/
-    text-align: center;
-    padding: 50px 12px;
-    height: 1000px; 
+    text-align: center; /**alineamos el texto en el centro**/
+    padding: 50px 12px; /** agregamos relleno superior y a los costados **/
+    height: 1000px;  /**establecemos el tamaño del contenedor**/
 
 }
 
-#contacto .contenedor input{
-    border-radius: 10px;
-    background-color: rgba(48, 48, 119,0.2);
-    border-color:rgb(48, 48, 119);
-    border: none;
-    margin: 20px;
-    width: 300px;
-    height: 40px;
-    font-size: 0.8em;
-    padding: 15px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.5); /**sombra del borde**/
+#contacto .contenedor input{ /**estilo para los campos del formulario**/
+    border-radius: 10px; /**redondeamos el borde**/
+    background-color: rgba(48, 48, 119,0.2); /**fondo de los campos**/
+    border: none; /** eliminamos el borde de los campos **/
+    margin: 20px; /** agregamos margen a los campos  **/
+    width: 300px; /** establecemos el ancho de los campos **/
+    height: 40px; /** establecemos el alto de los campos **/
+    font-size: 0.8em; /** tamaño que va a tener el texto que ingresemos en el los campos **/
+    padding: 15px; /** agregamos relleno **/
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5); /**sombra del borde**/ 
 }
 
 #contacto .contenedor input:hover{
@@ -296,12 +298,11 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
 
 footer {
     background-color: rgb(245, 245, 245);
-    height: 340;
+    height: 100%;
 }
 
 
 footer .contenedor .cajadatos{
-    padding-top: 10px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -310,19 +311,17 @@ footer .contenedor .cajadatos{
     background-color: rgb(245, 245, 245);
 }
 
-footer .contenedor .cajadatos .datos {
-    padding-top: 10px;
-}
+
 
 footer a, i {
     text-decoration: none;
+    padding-top: 15px;
     color: black;
     font-size: 1.25em;
     padding-left: 10px;
 }
 
 footer .copy {
-    padding-top: 15px;
     width: 100%;
     display: flex;
     justify-content: right;
@@ -337,7 +336,7 @@ footer .copy {
     padding: 30px ;
     margin: 20px;
     border-radius: 15px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.9);
 
 }
 
@@ -347,8 +346,8 @@ footer .copy {
     justify-content: center; /**centra el contenido del contenedor**/
     text-align: center; /**alinea el texto**/
     flex-direction: column; /**aliena los items en columna**/
-    height: 60vh; /**tamaño relativo del contenedor**/
-    padding: 15px;
+    height: 100vh; /**tamaño relativo del contenedor**/
+    padding: 1px;
     background-repeat:no-repeat; /**la imagen no se repite**/
     background-size:cover; /**la imagen cubre todo el contenedor**/
     background-position: center center; /**la imagen se posiciona en el centro**/
@@ -502,8 +501,8 @@ footer .copy {
     }
 
     #ubicacion iframe {
-        height: 450px;
-        width: 900px;
+        height: 350px;
+        width: 700px;
 
     }
 
@@ -577,6 +576,7 @@ footer .copy {
         display: flex; 
         justify-content: space-evenly;/**agrega un relleno parejo al contenedor**/
         align-items: center;
+
     }
 
     #nosotros .textonosotros{
@@ -756,7 +756,7 @@ footer .copy {
 
      footer .contenedor .cajadatos {
         flex-direction: row;
-        height: 100px;
+        height: 50px;
         width: 100%;
         justify-content: center;
         justify-content: space-between;
