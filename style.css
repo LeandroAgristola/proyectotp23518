@@ -100,7 +100,7 @@ header a { /**estilo para el texto del menu**/
 	transition-duration: 0.5s; /**transicion de entrada**/
 }
 
-header a:hover {
+header a:hover { /**estilo para los link del header**/
     font-size: 1.5em;
     color:rgb(89, 89, 247); /**color del texto del menu al interactuar**/
     padding: 18px; /**colocamos el mismo paddin que en "a" para q no se mueva el elemento**/
@@ -153,8 +153,8 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
 /**ESTILO PARA LA SECCION DE SERIE*/
 
 #serie{ 
-    background-color: rgb(30,30,30);
-    color:white;
+    background-color: rgb(30,30,30); /**color del fondo del contenedor**/
+    color:white; /**color del texto**/
     text-align: center;
 
 }
