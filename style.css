@@ -150,6 +150,10 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
     height: 900px; /**tamaño relativo del contenedor**/
 }
 
+#nosotros .iframenosotros iframe{
+    display: none;
+}
+
 /**ESTILO PARA LA SECCION DE SERIE*/
 
 #serie{ 
@@ -288,7 +292,7 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
     height: 580px;
 }
 
-#ubicacion iframe{
+#ubicacion #map{
     height: 350px;
     width: 350px;
 
@@ -511,7 +515,7 @@ footer .copy {
         font-size: 2.7em;
     }
 
-    #ubicacion iframe {
+    #ubicacion #map {
         height: 350px;
         width: 700px;
 
@@ -611,13 +615,17 @@ footer .copy {
 
     }
 
-    #nosotros .imgnosotros{
+    #nosotros .iframenosotros{
+        height: 400px;
+        width: 700px;
+
+    }
+
+    #nosotros .iframenosotros iframe{
         
-        background-image: url("imagenes/s1.jpg");
-        background-size: cover;
-        background-position: center center;
-        height: 500px;
-        width: 500px;
+        display:flex;
+        height: 100%;
+        width: 100%;
 
     }
 
@@ -763,7 +771,7 @@ footer .copy {
         font-size: 2.7em;
     }
 
-    #ubicacion iframe {
+    #ubicacion #map {
         height: 450px;
         width: 800px;
 
