@@ -426,12 +426,17 @@ footer .copy {
         
     }
     
+    #hero {
+        height: 1000px;
+    }
+
     /**estilos responsive para el nosotros**/
 
     #nosotros .contenedor{
         display: flex; 
         align-items: center;
         padding: 50px;
+        height: 1000px;
     }
 
     #nosotros .textonosotros{
@@ -440,15 +445,21 @@ footer .copy {
 
     /**Estilo para la seccion del sub menu**/
 
- 
+
     #serie .contenedor{
-        padding-top: 50px 0px;
-        padding-bottom: 0px;
         height: 1000px; /**tamaño relativo del contenedor**/
+    }
+
+    .datos_empresa{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
     
     #serie h2 {
-        margin-top: 50px;
+        margin-top: 120px;
+        margin-bottom: 0px;
     
     }
     
@@ -458,16 +469,16 @@ footer .copy {
     }
     
     #serie .submenu { /**aplicamos estilo a las imagenes de todos los sub menu**/
-        background-position: center center; 
-        background-size: cover;
-        padding: 20px ;
-        margin: 20px;
-        border-radius: 15px;
+       width: 70%;
+       height: 180px;
+
     }
     /**Estilo para la seccion de contacto**/
 
     #contacto {
         padding-top: 50px;
+        height: 1000px;
+        margin: 0px;
 
     }
     
@@ -569,6 +580,11 @@ footer .copy {
     #hero h1{
         font-size: 4em;
     }
+
+    #hero {
+        height: 1000px;
+
+    }
     
 /**estilos responsive para el nosotros**/
     
@@ -610,6 +626,7 @@ footer .copy {
     #serie .datos_empresa{ /** utilizamos la clase que contiene todos los sub menu**/
         display: flex; /**colocamos los sub menu en linea horizontal**/
         justify-content: center; /**centramos el contenido**/
+        flex-direction: row;
 
     }
 
