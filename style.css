@@ -150,7 +150,7 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
     height: 900px; /**tamaño relativo del contenedor**/
 }
 
-#nosotros .iframenosotros iframe{
+#nosotros .videonosotros video{
     display: none;
 }
 
@@ -292,7 +292,7 @@ header .logo img { /**aplicamos estilo a la imagen del logo**/
     height: 580px;
 }
 
-#ubicacion #map{
+#ubicacion iframe {
     height: 350px;
     width: 350px;
 
@@ -515,7 +515,7 @@ footer .copy {
         font-size: 2.7em;
     }
 
-    #ubicacion #map {
+    #ubicacion iframe {
         height: 350px;
         width: 700px;
 
@@ -615,13 +615,13 @@ footer .copy {
 
     }
 
-    #nosotros .iframenosotros{
+    #nosotros .videonosotros{
         height: 400px;
         width: 700px;
 
     }
 
-    #nosotros .iframenosotros iframe{
+    #nosotros .videonosotros video{
         
         display:flex;
         height: 100%;
@@ -771,7 +771,7 @@ footer .copy {
         font-size: 2.7em;
     }
 
-    #ubicacion #map {
+    #ubicacion iframe {
         height: 450px;
         width: 800px;
 
